@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#dddddd"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.byaz.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BYAZ-LEN-DEN"
+        android:textSize="40sp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_bright" />
+
+
+
+    <TextView
+        android:id="@+id/mywidget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:textColor="#ff4500"
+        android:text="Made By Rohit chauhan,B-tech(Computer Science And Engineering), IIT-MANDI @2017"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp" />
+
+    <Button
+        android:text="Hit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:layout_alignTop="@+id/tv_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/tv_password"
+        android:layout_marginBottom="178dp"
+        android:layout_above="@+id/mywidget"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/rohit"
+        android:layout_marginTop="50dp"
+        android:layout_height="140dp"></LinearLayout>
+
+    <TextView
+        android:text="ENTER PASSWORD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView22"
+        android:layout_above="@+id/btn"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Protected By :- Norton Antivirus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/textView18"
+        android:layout_above="@+id/mywidget"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:id="@+id/textView9"
+        android:textSize="25sp"
+        android:text="      DIGITAL INDIA"
+        android:textColor="@android:color/holo_purple"
+        android:layout_below="@+id/btn"
+        android:layout_alignLeft="@+id/tv_password"
+        android:layout_alignStart="@+id/tv_password" />
+
+</RelativeLayout>

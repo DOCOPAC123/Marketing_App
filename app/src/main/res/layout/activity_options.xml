@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_options"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.byaz.options">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="#dddddd"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:text="Return "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_home"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:text="BYAZ-LEN-DEN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:textSize="40sp"
+                android:id="@+id/textView"
+                android:gravity="center"
+                android:textColor="@android:color/holo_blue_bright" />
+
+            <Button
+                android:text="Add New Transaction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:id="@+id/btn1"
+                android:textColor="@android:color/holo_orange_dark" />
+
+            <Button
+                android:text="Know All Transaction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn1"
+                android:layout_alignRight="@+id/btn1"
+                android:layout_alignEnd="@+id/btn1"
+                android:layout_marginTop="45dp"
+                android:id="@+id/btn2"
+                android:textColor="@android:color/holo_orange_dark" />
+
+            <Button
+                android:text="Transaction By Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn3"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/btn2"
+                android:layout_alignStart="@+id/btn2"
+                android:layout_marginTop="50dp"
+                android:textColor="@android:color/holo_orange_dark" />
+
+            <Button
+                android:text="Delete a Transaction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn4"
+                android:layout_marginTop="50dp"
+                android:textColor="@android:color/holo_orange_dark" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
